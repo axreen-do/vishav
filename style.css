@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Great+Vibes&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff1f2, #f8dce3);
+  font-family: 'DM Sans', sans-serif;
+  color: #82475a;
+}
+
+.welcome {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.small-heading {
+  letter-spacing: 4px;
+  font-size: 11px;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(48px, 8vw, 80px);
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.subtitle {
+  color: #9a7080;
+}
+
+.envelope {
+  position: relative;
+  width: 280px;
+  height: 180px;
+  background: #e3a2b1;
+  border: none;
+  border-radius: 8px;
+  margin-top: 55px;
+  cursor: pointer;
+  box-shadow: 0 15px 35px #a36c7c40;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #f1bdc9;
+  clip-path: polygon(0 0, 50% 55%, 100% 0);
+}
+
+.seal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #943e58;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+}
+
+.instruction {
+  margin-top: 35px;
+  font-size: 13px;
+}
+
+.hidden {
+  display: none;
+}
+
+.letter {
+  background: #fffaf5;
+  padding: 35px;
+  margin-top: 30px;
+  max-width: 500px;
+  border-radius: 12px;
+  line-height: 1.9;
+}
+
+.letter h2, .signature {
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
