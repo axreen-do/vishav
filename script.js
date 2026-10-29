@@ -1,4 +1,3 @@
-
 const envelope = document.getElementById("envelope");
 const letter = document.getElementById("letter");
 const letterText = document.getElementById("letterText");
@@ -8,6 +7,9 @@ but ours is my favourite.
 
 You are my happiness, my safe place,
 and the person I want beside me forever.
+
+You make me the happiest person on earth,
+I feel like my best self with you.
 
 I love you, always. ❤️`;
 
